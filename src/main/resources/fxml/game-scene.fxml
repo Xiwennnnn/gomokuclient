@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="boardPane" prefHeight="700.0" prefWidth="715.0" style="-fx-background-color: #32d88c;" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="whpu.gomoku.gomokuclient.controller.GameController">
+   <children>
+      <Rectangle fx:id="Board" arcHeight="5.0" arcWidth="5.0" fill="#fff8e2" height="560.0" layoutX="78.0" layoutY="65.0" stroke="BLACK" strokeType="INSIDE" width="560.0" />
+      <Button fx:id="UnDoButton" onAction="#undoFunc" layoutX="45.0" layoutY="640.0" mnemonicParsing="false" prefHeight="48.0" prefWidth="141.0" style="-fx-background-color: #c16fff;" text="悔棋" textFill="WHITE">
+         <font>
+            <Font name="Yu Gothic UI Regular" size="21.0" />
+         </font>
+      </Button>
+      <Button fx:id="GiveUpButton" onAction="#giveUpFunc" layoutX="530.0" layoutY="640.0" mnemonicParsing="false" prefHeight="48.0" prefWidth="141.0" style="-fx-background-color: #ff3333;" text="认输" textFill="WHITE">
+         <font>
+            <Font name="Yu Gothic UI Regular" size="21.0" />
+         </font>
+      </Button>
+      <Label fx:id="isTurnInfo" layoutX="292.0" layoutY="14.0" text="轮到你了" textFill="WHITE">
+         <font>
+            <Font name="Yu Gothic UI Regular" size="33.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
